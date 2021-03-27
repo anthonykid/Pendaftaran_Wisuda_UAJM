@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="#F4DD45"
     android:padding="20dp"
-    tools:context=".user_info"
-    android:background="#F4DD45">
+    tools:context=".user_info">
 
     <TextView
         android:id="@+id/textView6"
@@ -15,98 +15,273 @@
         android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:paddingTop="50dp"
         android:text="Profil Anda"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:layout_centerInParent="true">
 
-        <TextView
-            android:id="@+id/fullName_textview"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FullName"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/stambuk_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Stambuk"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
 
-        <TextView
-            android:id="@+id/fakultas_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fakultas"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Nama Lengkap :"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/jurusan_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jurusan"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/fullName_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="FullName"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/judulSkripsi_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="JudulSkripsi"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tempatTanggalLahir_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TempatTanggalLahir"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
 
-        <TextView
-            android:id="@+id/whatsapp_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Whatsapp"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Stambuk \t\t\t\t\t\t\t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/jenisKelamin_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="JenisKelamin"
-            android:textColor="#000000"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/stambuk_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Stambuk"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Fakultas \t\t\t\t\t\t\t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fakultas_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Fakultas"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Jurusan \t\t\t\t\t\t\t\t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jurusan_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Jurusan"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Judul Skripsi \t\t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/judulSkripsi_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="JudulSkripsi"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Tempat dan \t\t\t\t:\nTanggal Lahir"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tempatTanggalLahir_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="TempatTanggalLahir"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="No.Whatsapp \t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/whatsapp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Whatsapp"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Jenis Kelamin \t\t:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jenisKelamin_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="JenisKelamin"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:paddingBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
 
         <Button
             android:id="@+id/button3"
@@ -115,10 +290,10 @@
             android:layout_weight="1"
             android:onClick="update"
             android:text="Update Info"
-            app:backgroundTint="#7197F6"
-            app:cornerRadius="25dp"
+            android:textColor="#ffffff"
             android:textSize="18dp"
-            android:textColor="#ffffff"/>
+            app:backgroundTint="#7197F6"
+            app:cornerRadius="25dp" />
 
         <Button
             android:id="@+id/button4"
@@ -127,19 +302,20 @@
             android:layout_weight="1"
             android:onClick="changeEmail"
             android:text="Change Email"
-            app:backgroundTint="#4741F1"
-            app:cornerRadius="25dp"
+            android:textColor="#ffffff"
             android:textSize="18dp"
-            android:textColor="#ffffff"/>
+            app:backgroundTint="#4741F1"
+            app:cornerRadius="25dp" />
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:paddingRight="10dp"
         android:text="Created By AnthonyKid"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="18dp"
-        android:paddingRight="10dp"
-        android:gravity="end"/>
+        android:textStyle="bold" />
 </RelativeLayout>

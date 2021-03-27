@@ -17,6 +17,6 @@ class TestActivity : AppCompatActivity() {
         startActivity(Intent(this@TestActivity, profile_activity :: class.java))
     }
     fun changeEmail(view: View) {
-        startActivity(Intent(this@TestActivity, changeEmail::class.java))
+        startActivity(Intent(this@TestActivity, status::class.java))
     }
 }

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PendaftaranWisuda">
-        <activity android:name=".user_info"></activity>
+        <activity android:name=".status"></activity>
+        <activity android:name=".user_info" />
         <activity android:name=".Login_activity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".profile_activity" />

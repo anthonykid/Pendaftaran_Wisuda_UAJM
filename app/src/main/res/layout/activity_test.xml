@@ -31,7 +31,7 @@
             android:gravity="center"
             android:textSize="28dp"
             android:textStyle="bold"
-            android:text="Jika Email Yang Dimasukkan Sudah Benar, Silahkan Input Data Mahasiswa, Karena Akan Digunakan Untuk Buku Wisuda \n \n Tekan Button Dibawah"
+            android:text="Selamat Datang Wisudawan/Wisudawati 2021/2022 \nSilahkan Menginput Data Mahasiswa\n Dengan Benar \n \n Tekan Button Dibawah"
             android:textColor="#000000" />
     </LinearLayout>
 
@@ -66,14 +66,14 @@
         />
 
     <Button
-        android:id="@+id/changeEmail_btn"
+        android:id="@+id/status_btn"
         android:layout_marginTop="10dp"
         android:layout_below="@id/lihatdata_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:onClick="changeEmail"
-        android:text="Ganti Email"
+        android:text="Lihat Status"
         app:backgroundTint="#443EA6"
         app:cornerRadius="28dp"
         android:textColor="#ffffff"
