@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pendaftaranwisuda">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/uajm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PendaftaranWisuda">
+        <activity android:name=".user_info"></activity>
+        <activity android:name=".Login_activity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".profile_activity" />
+        <activity android:name=".password_rest" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".changeEmail" />
+        <activity android:name=".menu_utama_ano">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

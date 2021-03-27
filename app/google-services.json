@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490069153761",
+    "project_id": "pendaftaran-wisuda",
+    "storage_bucket": "pendaftaran-wisuda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490069153761:android:eb41e2f4e413080110e4a0",
+        "android_client_info": {
+          "package_name": "com.example.pendaftaranwisuda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490069153761-sr9vfr58560v0o21s1ugtiphggmelks0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPRqNlD9zzr0f0sikm3L0dxr1TqAxdNCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490069153761-sr9vfr58560v0o21s1ugtiphggmelks0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
